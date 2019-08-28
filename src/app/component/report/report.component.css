@@ -1,0 +1,54 @@
+h2 {
+    /* color: #333; */
+    margin-bottom: 30px;
+}
+
+h2,
+.h2 {
+    color: #00448C;
+}
+
+h2,
+.h2 {
+    font-size: 24px;
+}
+
+a {
+    color: #3369a3;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+.titleArticle {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.57142857;
+    color: #333;
+    background-color: #fff;
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.57142857;
+    color: #333;
+    background-color: #fff;
+}
+
+.centerDiv {
+    border: 1px solid red;
+    width: 90%;
+}
+
+.centerIntDiv {
+    /* background-color: #FF4136; */
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,14 @@
+<div class="centerDiv">
+  <div class="centerIntDiv">
+    <h2>Consulta nuestros informes</h2>
+
+    <p>Consulta los resultados económicos y la evolución de los mercados monetarios de la jornada</p>
+
+    <div *ngFor="let article of articles">
+
+      <a href="{{article.sourceLink}}">{{article.titulo}}</a>
+      <div colspan="3" class="titleArticle">{{article.categoria}} | <b>{{article.fechaUltimaActualizacion}}</b></div>
+      <p class="descriptionArticle">{{article.descripcion}}</p>
+    </div>
+  </div>
+</div>

@@ -1,10 +1,21 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
-const routes: Routes = [];
+import { ReportComponent } from './component/report/report.component';
+
+const OPTS: ExtraOptions = {
+  // enableTracing: true,
+  useHash:true
+};
+
+const ROUTES: Routes = [
+  { path: '', redirectTo: '/reports', pathMatch: 'full' },
+  { path: 'reports', component: ReportComponent }
+
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(ROUTES, OPTS)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
